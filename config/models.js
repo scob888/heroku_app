@@ -18,7 +18,7 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   // connection: 'localDiskDb',
-  connection: 'heroku_postgre',
+  connection: 'heroku_mongodb',
 
   /***************************************************************************
   *                                                                          *
