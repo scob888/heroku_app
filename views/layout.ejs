@@ -29,11 +29,16 @@
     -->
 
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/dc.css">
+    <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
   <body>
+    <% include ./partials/header %>
     <%- body %>
+    <% include ./partials/footer %>
 
 
 
@@ -59,6 +64,7 @@
     -->
 
     <!--TEMPLATES-->
+
     <!--TEMPLATES END-->
 
 
@@ -86,6 +92,16 @@
     -->
 
     <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="/js/vendor/jquery.validate.min.js"></script>
+    <script src="/js/vendor/jquery-ui.js"></script>
+    <script src="/js/vendor/d3.js"></script>
+    <script src="/js/vendor/crossfilter.js"></script>
+    <script src="/js/vendor/dc.js"></script>
+    <script src="/js/vendor/bootstrap.js"></script>
+    <script src="/js/vendor/queue.js"></script>
+    <script src="/js/vendor/underscore.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
