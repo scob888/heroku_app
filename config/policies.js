@@ -26,7 +26,17 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  // '*': true,
+  '*': 'flash',
+
+  UserController: {
+    '*'   : 'admin',
+    new : 'flash',
+    subscribe: ['flash', 'sessionAuth'],
+    create: 'flash',
+    show  : 'userCanSeeProfile',
+    edit  : 'userCanSeeProfile',
+    update  : 'userCanSeeProfile'
+  }
 
   /***************************************************************************
   *                                                                          *
